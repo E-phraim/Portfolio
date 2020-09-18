@@ -1,0 +1,72 @@
+*{
+    outline: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar-brand img{
+    border: 1px solid white;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.navbar{
+    height: 60px;
+    /* background: rgb(78, 78, 78, 0.4); */
+    background: linear-gradient(to right, rgb(63, 63, 63, .3), rgb(75, 75, 75, .5));
+}
+.navbar-nav.navbar-center{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav-link{
+    font-weight: 300;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+.nav-link:hover{
+    font-weight: 400;
+    transition: .3s ease-in-out;
+    color: black;
+}
+.switch i{
+    color: white;
+    opacity: .4;
+    cursor: pointer;
+}
+.switch i:hover{
+    color: red;
+}
+
+#intro{
+    background: grey;
+    height: 600px;
+}
+#intro .first{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+}
+.intro-text{
+    position: relative;
+    overflow: hidden;
+    transform: translateY(-50%);
+    width: 16em;
+    font-family: 'Courier New', Courier, monospace;
+}
+.typewriter-anim{
+    animation: typewriter 4s steps(40) 1s 1 normal both;
+}
+@keyframes typewriter{
+    from{
+        width: 0;
+    }
+    to {
+        width: 16em;
+    }
+}
